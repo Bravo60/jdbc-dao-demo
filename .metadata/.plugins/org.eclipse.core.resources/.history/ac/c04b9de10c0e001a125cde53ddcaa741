@@ -1,0 +1,17 @@
+package db;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class DB {
+	
+	private static Properties loadProperties() {
+		try (fileInputStream fs = new FileInputStream("db.properties")) {
+			Propertites props = new Properties();
+			props.load(fs);
+		}
+		
+		
+	}
+
+}

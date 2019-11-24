@@ -1,0 +1,10 @@
+package db;
+
+public class DbExcepition extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+	
+	public void DbExcepition(String msg) {
+		super(msg);
+	}
+}
